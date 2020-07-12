@@ -1,0 +1,15 @@
+2020-07-12 20:01:18 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\exam/src/test/resources/params.properties
+2020-07-12 20:01:18 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-12 20:01:18 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========readfilepath===F:\AutoJava\exam/src/test/resources/exam.xlsx
+2020-07-12 20:01:19 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-12 20:01:19 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-12 20:01:19 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-12 20:01:20 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-12 20:01:20 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-12 20:01:20 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-12 20:01:20 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-12 20:01:21 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-12 20:01:21 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:98) - [ INFO ]----==========execlWrite=======
+2020-07-12 20:01:21 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:99) - [ INFO ]----=========writefilepath===F:\AutoJava\exam/src/test/resources/exam.xlsx
+2020-07-12 20:01:21 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-12 20:01:21 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----failed
