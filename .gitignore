@@ -1,0 +1,15 @@
+#maven
+target/
+log/
+allure-results/
+
+#IDEA
+.idea/
+*.iml
+
+#eclipse
+.settings/
+.metadata/
+.classpath
+.project
+Services/
