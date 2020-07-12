@@ -1,1 +1,0 @@
-{"uuid":"1ad35512-d463-492c-b90c-090509b7e11f","name":"cases.Login.addToken","description":"","start":1594214377754,"stop":1594214377754,"children":["ee00610c-5ef3-432f-add5-9caa2764a414"],"afters":[{"name":"addToken","status":"passed","stage":"finished","description":"","start":1594214377754,"stop":1594214377754}]}
