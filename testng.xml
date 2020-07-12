@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="自动化考核项目" allow-return-values="true">
+<!--    <test name="register接口">-->
+<!--        <classes>-->
+<!--            <class name="cases.Register"></class>-->
+<!--            <parameter name="sheetIndex" value="1"></parameter>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="login接口">
+        <classes>
+            <class name="cases.Login"></class>
+            <parameter name="sheetIndex" value="2"></parameter>
+        </classes>
+    </test>
+<!--    <test name="新增项目接口">-->
+<!--        <classes>-->
+<!--            <class name="cases.ProjectAdd"></class>-->
+<!--            <parameter name="sheetIndex" value="3"></parameter>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="配置列表接口">-->
+<!--        <classes>-->
+<!--            <class name="cases.ConfigList"></class>-->
+<!--            <parameter name="sheetIndex" value="4"></parameter>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="项目列表接口">-->
+<!--        <classes>-->
+<!--            <class name="cases.ProjectList"></class>-->
+<!--            <parameter name="sheetIndex" value="5"></parameter>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
