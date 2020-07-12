@@ -1,0 +1,588 @@
+2020-07-05 18:37:23 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 18:37:23 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 18:38:07 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 18:38:07 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 18:38:08 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 18:38:08 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 18:38:08 method: cases.Register.testRegister(Register.java:31) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 18:38:09 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 18:38:09 method: cases.Register.testRegister(Register.java:47) - [ INFO ]----非数据库断言
+2020-07-05 18:38:09 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 18:38:09 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 18:38:09 method: cases.Register.testRegister(Register.java:31) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 18:39:59 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 18:39:59 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 18:40:01 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 18:40:01 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 18:40:01 method: cases.Register.testRegister(Register.java:31) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 18:40:01 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 18:40:01 method: cases.Register.testRegister(Register.java:47) - [ INFO ]----非数据库断言
+2020-07-05 18:40:01 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 18:40:01 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 18:40:01 method: cases.Register.testRegister(Register.java:31) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:13:54 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 19:13:54 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 19:13:55 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 19:13:55 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:13:55 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:13:55 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:13:55 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 19:13:55 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:13:56 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8001/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 19:13:56 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8002/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 19:13:56 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:13:56 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:13:56 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:20:32 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 19:20:32 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 19:20:33 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 19:20:33 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:20:33 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:20:33 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:20:34 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 19:20:34 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:20:34 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8001/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 19:20:34 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8002/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 19:20:34 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:20:34 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:20:34 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:21:42 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 19:21:42 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 19:21:44 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:21:44 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:21:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 19:21:44 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:21:44 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:21:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["两次输入密码不正确"]}
+2020-07-05 19:21:44 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:27:50 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 19:27:50 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 19:27:52 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 19:27:52 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:27:52 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:27:52 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:27:52 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 19:27:52 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:27:53 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 19:27:53 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 19:27:53 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:27:53 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:27:53 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:27:53 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["两次输入密码不正确"]}
+2020-07-05 19:27:53 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:36:25 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 19:36:25 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 19:36:27 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 19:36:27 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:36:27 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:36:27 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:38:06 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 19:38:13 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 19:39:07 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 19:39:07 method: cases.Register.testRegister(Register.java:22) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 19:39:07 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 19:39:07 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 19:39:07 method: cases.Register.testRegister(Register.java:32) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 19:39:34 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["两次输入密码不正确"]}
+2020-07-05 19:41:11 method: cases.Register.testRegister(Register.java:48) - [ INFO ]----非数据库断言
+2020-07-05 20:13:13 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:13:13 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:13:14 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 20:13:14 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:13:14 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:13:14 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:13:14 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:13:15 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:13:15 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:13:15 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:13:15 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:13:15 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:13:15 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["两次输入密码不正确"]}
+2020-07-05 20:13:54 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:13:54 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:13:56 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 20:13:56 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:13:56 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:13:56 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:13:56 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:13:56 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:13:56 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=n,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:15:12 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:15:12 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:15:13 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.code":0,"$.msg":""}', sql='null'}
+2020-07-05 20:15:13 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:15:13 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:15:13 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:15:14 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:15:14 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:15:14 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=n,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:19:47 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:19:47 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:19:49 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:19:49 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:19:49 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:19:49 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:19:49 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:19:49 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:19:49 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=n,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:20:10 method: cases.Base.read(Base.java:106) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:20:10 method: cases.Base.read(Base.java:113) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:20:11 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:20:11 method: cases.Base.parameterization(Base.java:80) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:20:11 method: cases.Base.parameterization(Base.java:98) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:20:11 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:20:11 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:20:11 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:20:11 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:20:11 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=n,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:21:59 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:21:59 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:22:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:22:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:22:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:22:00 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:22:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:22:00 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:22:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:22:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:22:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:22:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=n,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:22:47 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:22:47 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:22:48 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:22:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:22:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:22:48 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:22:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:22:48 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:22:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:22:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:22:49 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=N,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123457"}', contentType='json', expectResult='{"$.code":1,"$.msg":""}', sql='null'}
+2020-07-05 20:22:49 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=n,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123458"}', contentType='json', expectResult='{"$.code":2,"$.msg":""}', sql='null'}
+2020-07-05 20:36:27 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:36:27 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:36:28 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:36:28 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:28 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:28 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:29 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:36:29 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:29 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:36:29 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123456"}', contentType='json', expectResult='{"$.email":"该字段不能为空"}', sql='null'}
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"id":2114,"username":"poiuytr","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMTE0LCJ1c2VybmFtZSI6InBvaXV5dHIiLCJleHAiOjE1OTQwMzg5ODgsImVtYWlsIjoiIn0.FZOa7gYd1srY0YHPkWYYosE-bZSrqrTr4o1m0KedRwU"}
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='确认密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuyrte","password":"123456","email":"poiuytr@qq.com","password_confirm":""}', contentType='json', expectResult='{"$.password_confirm":"该字段不能为空"}', sql='null'}
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password_confirm":["该字段不能为空。"]}
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:29 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:36:29 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='用户名为5个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuy","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:30 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:30 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:36:30 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=6', desc='用户名为21个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuypoiuypoiuypoiuyp","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:30 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:30 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:36:30 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=7', desc='邮箱不包含邮箱名，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0001","password":"123456","email":"@qq.com","password_confirm":"123456"}', contentType='json', expectResult='null', sql='null'}
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:30 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=8', desc='邮箱不包含@，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0002","password":"123456","email":"qq.com","password_confirm":"123456"}', contentType='json', expectResult='null', sql='null'}
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:30 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=9', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0003","password":"11","email":"20200705001qq.com","password_confirm":"11"}', contentType='json', expectResult='null', sql='null'}
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:30 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=10', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0004","password":"111111111111111111111111111","email":"20200705002qq.com","password_confirm":"111111111111111111111111111"}', contentType='json', expectResult='null', sql='null'}
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:36:30 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:36:30 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:36:30 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:26 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:40:26 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:40:27 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:40:27 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:27 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:27 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:28 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:28 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["已存在一位使用该名字的用户。"],"password":["该字段不能为空。"]}
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123456"}', contentType='json', expectResult='{"$.email":"该字段不能为空"}', sql='null'}
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:28 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["已存在一位使用该名字的用户。"]}
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='确认密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuyrte","password":"123456","email":"poiuytr@qq.com","password_confirm":""}', contentType='json', expectResult='{"$.password_confirm":"该字段不能为空"}', sql='null'}
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:28 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password_confirm":["该字段不能为空。"]}
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='用户名为5个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuy","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:28 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:40:28 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=6', desc='用户名为21个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuypoiuypoiuypoiuyp","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:28 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:28 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:29 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:40:29 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=7', desc='邮箱不包含邮箱名，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0001","password":"123456","email":"@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=8', desc='邮箱不包含@，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0002","password":"123456","email":"qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=9', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0003","password":"11","email":"20200705001qq.com","password_confirm":"11"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=10', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0004","password":"111111111111111111111111111","email":"20200705002qq.com","password_confirm":"111111111111111111111111111"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:40:29 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:40:29 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:40:29 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:41 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:42:41 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:42:42 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:42:42 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:42 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:42 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:43 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr1","password":"","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:43 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123456"}', contentType='json', expectResult='{"$.email":"已存在一位使用该名字的用户"}', sql='null'}
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:43 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["已存在一位使用该名字的用户。"]}
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='确认密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuyrte1","password":"123456","email":"poiuytr@qq.com","password_confirm":""}', contentType='json', expectResult='{"$.password_confirm":"该字段不能为空"}', sql='null'}
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:43 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password_confirm":["该字段不能为空。"]}
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='用户名为5个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuy","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:43 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:42:43 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=6', desc='用户名为21个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuypoiuypoiuypoiuyp","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:43 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:43 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:44 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:42:44 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=7', desc='邮箱不包含邮箱名，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0001","password":"123456","email":"@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=8', desc='邮箱不包含@，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0002","password":"123456","email":"qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=9', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0003","password":"11","email":"20200705001qq.com","password_confirm":"11"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=10', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0004","password":"111111111111111111111111111","email":"20200705002qq.com","password_confirm":"111111111111111111111111111"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:42:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:42:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:42:44 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:45:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 20:45:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:45:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr1","password":"","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:45:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='邮箱为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuytr","password":"123456","email":"","password_confirm":"123456"}', contentType='json', expectResult='{"$.email":"已存在一位使用该名字的用户"}', sql='null'}
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:45:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["已存在一位使用该名字的用户。"]}
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===已存在一位使用该名字的用户
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='确认密码为空，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuyrte1","password":"123456","email":"poiuytr@qq.com","password_confirm":""}', contentType='json', expectResult='{"$.password_confirm":"该字段不能为空"}', sql='null'}
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:45:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password_confirm":["该字段不能为空。"]}
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='用户名为5个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuy","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:45:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:45:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=6', desc='用户名为21个字符，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"poiuypoiuypoiuypoiuyp","password":"123456","email":"poiuytr@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:45:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:45:59 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:46:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["仅允许6-20个字符的用户名"]}
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["仅允许6-20个字符的用户名"]
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=7', desc='邮箱不包含邮箱名，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0001","password":"123456","email":"@qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:46:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=8', desc='邮箱不包含@，其它字段不为空且符合要求', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0002","password":"123456","email":"qq.com","password_confirm":"123456"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:46:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"email":["请输入合法的邮件地址。"]}
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=9', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0003","password":"11","email":"20200705001qq.com","password_confirm":"11"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:46:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=10', desc='null', name='register', type='post', url='http://api.keyou.site:8000/user/register/', params='{"username":"test0004","password":"111111111111111111111111111","email":"20200705002qq.com","password_confirm":"111111111111111111111111111"}', contentType='json', expectResult='{"$.username":"仅允许6-20个字符的用户名"}', sql='null'}
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 20:46:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:36) - [ INFO ]----=========beforeSqlResult====null
+2020-07-05 20:46:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["仅允许6-20个字符的密码"],"email":["请输入合法的邮件地址。"],"password_confirm":["仅允许6~20个字符的确认密码"]}
+2020-07-05 20:46:00 method: cases.Register.testRegister(Register.java:60) - [ INFO ]----非数据库断言
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===仅允许6-20个字符的用户名
+2020-07-05 20:46:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 21:01:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 21:01:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 21:01:58 method: cases.Login.testLogin(Login.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 21:01:58 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 21:01:58 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 21:01:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:34) - [ INFO ]----非数据库断言
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 21:01:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:34) - [ INFO ]----非数据库断言
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 21:01:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:34) - [ INFO ]----非数据库断言
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 21:01:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:34) - [ INFO ]----非数据库断言
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 21:01:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 21:01:59 method: cases.Login.testLogin(Login.java:26) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 21:01:59 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 21:02:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-05 21:02:00 method: cases.Login.testLogin(Login.java:34) - [ INFO ]----非数据库断言
+2020-07-05 21:02:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 21:02:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 22:25:58 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-05 22:25:58 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${amount}=3000, ${register_mb}=15102611740, ${login_pwd}=12345678, ${register_pwd}=12345678, ${login_mb}=15102611740}
+2020-07-05 22:26:00 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-05 22:26:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-05 22:26:00 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-05 22:26:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 22:26:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 22:26:00 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-05 22:26:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:00 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-05 22:26:00 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-05 22:26:00 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-05 22:26:00 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-05 22:26:00 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-05 22:26:00 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:00 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:01 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-05 22:26:01 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-05 22:26:01 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:01 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-05 22:26:01 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-05 22:26:01 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"123456"}', contentType='json', expectResult='{"$.username":"test0000001"}', sql='null'}
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:01 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMTE1LCJ1c2VybmFtZSI6InRlc3QwMDAwMDAxIiwiZXhwIjoxNTk0MDQ1NTYwLCJlbWFpbCI6IiJ9.uwFxhAx8X5ZNVcGjyro-lE5ugAGe0pyycIxGspk2GwA","user_id":2115,"username":"test0000001"}
+2020-07-05 22:26:01 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test0000001
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===test0000001
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:21) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='不输入参数', name='login', type='get', url='http://api.keyou.site:8000/configures/', params='{"page":"","size":"","ordering":""}', contentType='json', expectResult='{"$.detail":"无效页面"}', sql='null'}
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:27) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMTE1LCJ1c2VybmFtZSI6InRlc3QwMDAwMDAxIiwiZXhwIjoxNTk0MDQ1NTYwLCJlbWFpbCI6IiJ9.uwFxhAx8X5ZNVcGjyro-lE5ugAGe0pyycIxGspk2GwA
+2020-07-05 22:26:01 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"count":2,"next":null,"previous":null,"results":[{"id":1,"name":"登录接口配置_自动化测试平台项目","interface":{"name":"登录接口_自动化测试平台项目","project":"自动化测试平台项目"},"author":"柠檬小姐姐"},{"id":2,"name":"查询项目列表配置_前程贷项目","interface":{"name":"查看项目列表接口_前程贷P2P金融项目","project":"前程贷P2P金融项目"},"author":"柠檬小姐姐"}],"total_pages":1,"current_page_num":1}
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:33) - [ INFO ]----非数据库断言
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无效页面
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:21) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='page值超限', name='login', type='get', url='http://api.keyou.site:8000/configures/', params='{"page":"5","size":"","ordering":""}', contentType='json', expectResult='{"$.detail":"无效页面"}', sql='null'}
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:27) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMTE1LCJ1c2VybmFtZSI6InRlc3QwMDAwMDAxIiwiZXhwIjoxNTk0MDQ1NTYwLCJlbWFpbCI6IiJ9.uwFxhAx8X5ZNVcGjyro-lE5ugAGe0pyycIxGspk2GwA
+2020-07-05 22:26:01 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"count":2,"next":null,"previous":null,"results":[{"id":1,"name":"登录接口配置_自动化测试平台项目","interface":{"name":"登录接口_自动化测试平台项目","project":"自动化测试平台项目"},"author":"柠檬小姐姐"},{"id":2,"name":"查询项目列表配置_前程贷项目","interface":{"name":"查看项目列表接口_前程贷P2P金融项目","project":"前程贷P2P金融项目"},"author":"柠檬小姐姐"}],"total_pages":1,"current_page_num":1}
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:33) - [ INFO ]----非数据库断言
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无效页面
+2020-07-05 22:26:01 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:21) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='size值超限', name='login', type='get', url='http://api.keyou.site:8000/configures/', params='{"page":"","size":"6","ordering":""}', contentType='json', expectResult='{"$.detail":"无效页面"}', sql='null'}
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:01 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:01 method: cases.ConfigList.testConfigList(ConfigList.java:27) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMTE1LCJ1c2VybmFtZSI6InRlc3QwMDAwMDAxIiwiZXhwIjoxNTk0MDQ1NTYwLCJlbWFpbCI6IiJ9.uwFxhAx8X5ZNVcGjyro-lE5ugAGe0pyycIxGspk2GwA
+2020-07-05 22:26:02 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"count":2,"next":null,"previous":null,"results":[{"id":1,"name":"登录接口配置_自动化测试平台项目","interface":{"name":"登录接口_自动化测试平台项目","project":"自动化测试平台项目"},"author":"柠檬小姐姐"},{"id":2,"name":"查询项目列表配置_前程贷项目","interface":{"name":"查看项目列表接口_前程贷P2P金融项目","project":"前程贷P2P金融项目"},"author":"柠檬小姐姐"}],"total_pages":1,"current_page_num":1}
+2020-07-05 22:26:02 method: cases.ConfigList.testConfigList(ConfigList.java:33) - [ INFO ]----非数据库断言
+2020-07-05 22:26:02 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无效页面
+2020-07-05 22:26:02 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-05 22:26:02 method: cases.ConfigList.testConfigList(ConfigList.java:21) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='正向用例', name='login', type='get', url='http://api.keyou.site:8000/configures/', params='{"page":"1","size":"1","ordering":""}', contentType='json', expectResult='{
+    "next": null,
+    "previous": "http:\/\/api.keyou.site:8000\/configures\/?ordering=name&size=1",
+    "count": 2,
+    "total_pages": 2,
+    "results": [
+        {
+            "author": "柠檬小姐姐",
+            "name": "登录接口配置_自动化测试平台项目",
+            "id": 1,
+            "interface": {
+                "name": "登录接口_自动化测试平台项目",
+                "project": "自动化测试平台项目"
+            }
+        }
+    ],
+    "current_page_num": 2
+}', sql='null'}
+2020-07-05 22:26:02 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-05 22:26:02 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-05 22:26:02 method: cases.ConfigList.testConfigList(ConfigList.java:27) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMTE1LCJ1c2VybmFtZSI6InRlc3QwMDAwMDAxIiwiZXhwIjoxNTk0MDQ1NTYwLCJlbWFpbCI6IiJ9.uwFxhAx8X5ZNVcGjyro-lE5ugAGe0pyycIxGspk2GwA
+2020-07-05 22:26:02 method: utils.HttpUtils.getResponseBody(HttpUtils.java:208) - [ INFO ]----==========响应体=={"count":2,"next":null,"previous":null,"results":[{"id":1,"name":"登录接口配置_自动化测试平台项目","interface":{"name":"登录接口_自动化测试平台项目","project":"自动化测试平台项目"},"author":"柠檬小姐姐"},{"id":2,"name":"查询项目列表配置_前程贷项目","interface":{"name":"查看项目列表接口_前程贷P2P金融项目","project":"前程贷P2P金融项目"},"author":"柠檬小姐姐"}],"total_pages":1,"current_page_num":1}
+2020-07-05 22:26:02 method: cases.ConfigList.testConfigList(ConfigList.java:33) - [ INFO ]----非数据库断言
+2020-07-05 22:26:02 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===null
+2020-07-05 22:26:02 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null

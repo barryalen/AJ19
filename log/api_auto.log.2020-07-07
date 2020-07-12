@@ -1,0 +1,353 @@
+2020-07-07 20:40:15 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:40:15 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:40:16 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:16 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:16 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:17 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:17 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:17 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:17 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:17 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 20:40:17 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:17 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 20:40:17 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 20:40:17 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:40:17 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:17 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:18 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjAxNiwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.d9-wSBVBjfuSNKZ6v1qepf4PD9jRsNmOhB1KI5baiD8","user_id":1076,"username":"test20200706002"}
+2020-07-07 20:40:18 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===test20200706002
+2020-07-07 20:40:18 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjAxNiwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.d9-wSBVBjfuSNKZ6v1qepf4PD9jRsNmOhB1KI5baiD8
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='项目名称为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"","leader":"eric","tester":"barry","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.name":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125618599
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName1594125618599
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:18 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"name":["该字段不能为空。"]}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='项目负责人为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"","tester":"barry","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.leader":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125618675
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName15941256185991594125618675
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:18 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"leader":["该字段不能为空。"]}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='项目测试人员为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"eric","tester":"","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.tester":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125618845
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName159412561859915941256186751594125618845
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:18 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"tester":["该字段不能为空。"]}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:18 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='开发人员为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"eric","tester":"barry","programmer":"","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.programmer":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125618970
+2020-07-07 20:40:18 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName1594125618599159412561867515941256188451594125618970
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:18 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:19 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"programmer":["该字段不能为空。"]}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='发布应用为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"eric","tester":"barry","programmer":"jenson","publish_app":"","desc":""}', contentType='json', expectResult='{"$.publish_app":"该字段不能为空"}', sql='null'}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125619065
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName15941256185991594125618675159412561884515941256189701594125619065
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:19 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"publish_app":["该字段不能为空。"]}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=6', desc='项目名称为已有名称，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"a","leader":"a","tester":"a","programmer":"a","publish_app":"a","desc":""}', contentType='json', expectResult='{"$.name":"具有 项目名称 的 项目信息 已存在"}', sql='null'}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125619139
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName159412561859915941256186751594125618845159412561897015941256190651594125619139
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:19 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"name":["具有 项目名称 的 项目信息 已存在。"]}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===具有 项目名称 的 项目信息 已存在
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["具有 项目名称 的 项目信息 已存在。"]
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=7', desc='desc为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"${name}","leader":"${leader}","tester":"${tester}","programmer":"${programmer}","publish_app":"${publish_app}","desc":"这是用来测试desc字段的"}', contentType='json', expectResult='{"$.name":"${name}","$.leader":"${leader}","$.tester":"${tester}","$.programmer":"${programmer}","$.publish_app":"${publish_app}","$.desc":"这是用来测试desc字段的"}', sql='null'}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125619199
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName1594125618599159412561867515941256188451594125618970159412561906515941256191391594125619199
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:19 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"leader":["请确保这个字段不能超过 50 个字符。"],"tester":["请确保这个字段不能超过 50 个字符。"],"programmer":["请确保这个字段不能超过 50 个字符。"]}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===eric1594125618599159412561867515941256188451594125618970159412561906515941256191391594125619199
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["请确保这个字段不能超过 50 个字符。"]
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=8', desc='各字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"${name}","leader":"${leader}","tester":"${tester}","programmer":"${programmer}","publish_app":"${publish_app}","desc":"${desc}"}', contentType='json', expectResult='{"$.name":"${name}","$.leader":"${leader}","$.tester":"${tester}","$.programmer":"${programmer}","$.publish_app":"${publish_app}","$.desc":"${desc}"}', sql='null'}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594125619278
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName15941256185991594125618675159412561884515941256189701594125619065159412561913915941256191991594125619278
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:40:19 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:40:19 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"leader":["请确保这个字段不能超过 50 个字符。"],"tester":["请确保这个字段不能超过 50 个字符。"],"programmer":["请确保这个字段不能超过 50 个字符。"],"publish_app":["请确保这个字段不能超过 100 个字符。"]}
+2020-07-07 20:40:19 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:42) - [ INFO ]----非数据库断言
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===eric15941256185991594125618675159412561884515941256189701594125619065159412561913915941256191991594125619278
+2020-07-07 20:40:19 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["请确保这个字段不能超过 50 个字符。"]
+2020-07-07 20:46:45 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:46:45 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:46:47 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-07 20:46:47 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:46:47 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:46:47 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-07 20:46:47 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:46:47 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:46:47 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:46:47 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:46:47 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-07 20:46:47 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:46:47 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:46:47 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-07 20:46:47 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:46:47 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:46:47 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:46:47 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:46:47 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 20:46:47 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:46:47 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:46:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 20:46:48 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:46:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 20:46:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 20:46:48 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:46:48 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 20:46:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:46:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:46:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 20:46:48 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:46:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 20:46:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 20:46:48 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:46:48 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-07 20:46:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:46:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:46:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjQwNiwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.0aouhV7DPoKtjOmjKOvELlhx3D-qUlOfmFpxMIcvzMo","user_id":1076,"username":"test20200706002"}
+2020-07-07 20:46:48 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:46:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-07 20:46:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===test20200706002
+2020-07-07 20:46:48 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjQwNiwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.0aouhV7DPoKtjOmjKOvELlhx3D-qUlOfmFpxMIcvzMo
+2020-07-07 20:46:48 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='项目名称为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"","leader":"eric","tester":"barry","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.name":"该字段不能为空"}', sql='null'}
+2020-07-07 20:46:48 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:29) - [ INFO ]----=============timestamp===1594126008971
+2020-07-07 20:47:17 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:36) - [ INFO ]----projectName1594126008971
+2020-07-07 20:47:36 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:47:36 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:54 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:54 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:55 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:55 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:55 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:55 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:56 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:56 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:56 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:56 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 20:50:56 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:56 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 20:50:56 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:56 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:56 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E","user_id":1076,"username":"test20200706002"}
+2020-07-07 20:50:56 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-07 20:50:56 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===test20200706002
+2020-07-07 20:50:56 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='项目名称为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"","leader":"eric","tester":"barry","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.name":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257127
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257127
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"name":["该字段不能为空。"]}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='项目负责人为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"","tester":"barry","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.leader":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257221
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257221
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"leader":["该字段不能为空。"]}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='项目测试人员为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"eric","tester":"","programmer":"jenson","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.tester":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257298
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257298
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"tester":["该字段不能为空。"]}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='开发人员为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"eric","tester":"barry","programmer":"","publish_app":"STG","desc":""}', contentType='json', expectResult='{"$.programmer":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257367
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257367
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"programmer":["该字段不能为空。"]}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='发布应用为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"MDM","leader":"eric","tester":"barry","programmer":"jenson","publish_app":"","desc":""}', contentType='json', expectResult='{"$.publish_app":"该字段不能为空"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257435
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257435
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"publish_app":["该字段不能为空。"]}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=6', desc='项目名称为已有名称，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"a","leader":"a","tester":"a","programmer":"a","publish_app":"a","desc":""}', contentType='json', expectResult='{"$.name":"具有 项目名称 的 项目信息 已存在"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257505
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257505
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"name":["具有 项目名称 的 项目信息 已存在。"]}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===具有 项目名称 的 项目信息 已存在
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["具有 项目名称 的 项目信息 已存在。"]
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=7', desc='desc为空，其它字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"${name}","leader":"${leader}","tester":"${tester}","programmer":"${programmer}","publish_app":"${publish_app}","desc":"这是用来测试desc字段的"}', contentType='json', expectResult='{"$.name":"${name}","$.leader":"${leader}","$.tester":"${tester}","$.programmer":"${programmer}","$.publish_app":"${publish_app}","$.desc":"这是用来测试desc字段的"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257566
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257566
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"id":433,"create_time":"2020-07-07T20:50:55.504107+08:00","name":"projectName1594126257566","leader":"eric1594126257566","tester":"barry1594126257566","programmer":"jenson1594126257566","publish_app":"STG1594126257566","desc":"这是用来测试desc字段的"}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===eric1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===eric1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===jenson1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===jenson1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===barry1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===barry1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===STG1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===STG1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===这是用来测试desc字段的
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===这是用来测试desc字段的
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===projectName1594126257566
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===projectName1594126257566
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:24) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=8', desc='各字段不为空且符合要求', name='projectAdd', type='post', url='http://api.keyou.site:8000/projects/', params='{"name":"${name}","leader":"${leader}","tester":"${tester}","programmer":"${programmer}","publish_app":"${publish_app}","desc":"${desc}"}', contentType='json', expectResult='{"$.name":"${name}","$.leader":"${leader}","$.tester":"${tester}","$.programmer":"${programmer}","$.publish_app":"${publish_app}","$.desc":"${desc}"}', sql='null'}
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 20:50:57 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${token}=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMjY1NCwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.6aYH_3r3V5BEl5Y99nYEJAh6KzeOzcl3aDZU1nUnq2E, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:30) - [ INFO ]----=============timestamp===1594126257642
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:37) - [ INFO ]----projectName1594126257642
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 20:50:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 20:50:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"id":434,"create_time":"2020-07-07T20:50:55.586497+08:00","name":"projectName1594126257642","leader":"eric1594126257642","tester":"barry1594126257642","programmer":"jenson1594126257642","publish_app":"STG1594126257642","desc":"desc1594126257642"}
+2020-07-07 20:50:57 method: cases.ProjectAdd.testProjectAdd(ProjectAdd.java:43) - [ INFO ]----非数据库断言
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===eric1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===eric1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===jenson1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===jenson1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===barry1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===barry1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===STG1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===STG1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===desc1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===desc1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===projectName1594126257642
+2020-07-07 20:50:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===projectName1594126257642
+2020-07-07 21:05:56 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-07 21:05:56 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-07 21:05:57 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-07 21:05:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 21:05:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 21:05:58 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 21:05:58 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 21:05:58 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-07 21:05:58 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 21:05:58 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 21:05:58 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 21:05:58 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-07 21:05:58 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-07 21:05:58 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-07 21:05:58 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-07 21:05:58 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-07 21:05:59 method: utils.HttpUtils.getResponseBody(HttpUtils.java:222) - [ INFO ]----==========响应体=={"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMzU1NiwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.x4XYU6-5axIoQRE9nEG45iBfR4kHypezTXkRA7KChAM","user_id":1076,"username":"test20200706002"}
+2020-07-07 21:05:59 method: cases.Login.testLogin(Login.java:37) - [ INFO ]----非数据库断言
+2020-07-07 21:05:59 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-07 21:05:59 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===test20200706002
+2020-07-07 21:05:59 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDc2LCJ1c2VybmFtZSI6InRlc3QyMDIwMDcwNjAwMiIsImV4cCI6MTU5NDIxMzU1NiwiZW1haWwiOiJ0ZXN0MjAyMDA3MDYwMDJAcXEuY29tIn0.x4XYU6-5axIoQRE9nEG45iBfR4kHypezTXkRA7KChAM

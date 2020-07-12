@@ -1,0 +1,436 @@
+2020-07-08 21:19:34 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 21:19:34 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:61) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:62) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:61) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:62) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:61) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:62) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:61) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:62) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:61) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 21:19:35 method: utils.ExcelUtils.getTestData(ExcelUtils.java:62) - [ INFO ]----===========returndata===CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 21:19:36 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 21:19:36 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:19:36 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:19:37 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-08 21:19:37 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 21:19:37 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:19:37 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:19:38 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-08 21:19:38 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:19:38 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:19:38 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:19:39 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-08 21:19:39 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:19:39 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:19:39 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:19:40 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-08 21:19:40 method: cases.Login.testLogin(Login.java:28) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 21:19:40 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:19:40 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:19:41 method: cases.Login.addToken(Login.java:50) - [ INFO ]----========token===null
+2020-07-08 21:40:34 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 21:40:34 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 21:40:35 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 21:40:35 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:40:35 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:40:37 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:40:37 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 21:40:37 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:40:37 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:40:38 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:40:38 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:40:38 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:40:38 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:40:39 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:40:39 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:40:39 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:40:39 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:40:41 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:40:41 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 21:40:41 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:40:41 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:40:42 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:42:06 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 21:42:06 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 21:42:07 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 21:42:07 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:42:07 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:42:08 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 21:42:08 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:42:08 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 21:42:08 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:42:08 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 21:42:08 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:42:08 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 21:42:08 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 21:42:08 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:42:08 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:42:08 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:42:09 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 21:42:09 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:42:09 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 21:42:09 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 21:42:09 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:43:47 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 21:43:47 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 21:43:48 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 21:43:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:43:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:43:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 21:43:48 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:43:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 21:43:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 21:43:49 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:43:49 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 21:43:49 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:43:49 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 21:43:49 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:43:49 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 21:43:49 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 21:43:49 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 21:43:49 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 21:43:49 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 21:43:49 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 21:43:49 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:06:42 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:06:42 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:06:44 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 22:06:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:06:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:06:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 22:06:44 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:06:44 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:06:44 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:06:44 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:06:44 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 22:06:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:06:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:06:44 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 22:06:44 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:06:44 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:06:44 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:06:44 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:06:44 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:06:44 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:06:44 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:06:45 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:06:45 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:06:45 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:06:45 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:06:45 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:06:45 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:06:45 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:06:45 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:06:45 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:06:45 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:06:45 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:06:45 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:06:45 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:06:45 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:06:45 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:06:45 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:06:45 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:06:45 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:06:45 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:06:45 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:06:45 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:08:53 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:08:53 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:08:53 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========filepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:08:54 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 22:08:54 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:08:54 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:08:55 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:08:55 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:08:55 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:08:55 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:08:55 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:08:55 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:08:55 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:08:55 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:08:55 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:08:55 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:08:55 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:08:56 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:08:56 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:08:56 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:08:56 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:08:56 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:11:46 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:11:46 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:11:46 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========readfilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:11:47 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 22:11:47 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:11:47 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:11:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:11:48 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:11:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:11:48 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:11:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:11:48 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:11:48 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:11:48 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:11:48 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:11:48 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:11:48 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:11:49 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:11:49 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:11:49 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:11:49 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:11:49 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:11:49 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:98) - [ INFO ]----=========writefilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:15:55 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:15:55 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:15:55 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========readfilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:15:56 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 22:15:56 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:15:56 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:15:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:15:57 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:15:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:15:57 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:15:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:15:57 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:15:57 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:15:57 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:15:57 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:15:57 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:15:57 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:15:58 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:15:58 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:15:58 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:15:58 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:15:58 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:15:58 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:98) - [ INFO ]----=========writefilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:24:40 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:24:40 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:24:40 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========readfilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:24:41 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 22:24:41 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:24:41 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:24:41 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 22:24:41 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:24:41 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:24:41 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:24:41 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:24:42 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:24:42 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:24:42 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:24:42 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:24:42 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:24:42 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:24:42 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:24:42 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:24:42 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:24:42 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:24:42 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:98) - [ INFO ]----==========execlWrite=======
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:99) - [ INFO ]----=========writefilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"username":["该字段不能为空。"]}
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"password":["该字段不能为空。"]}
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:24:42 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----failed
+2020-07-08 22:27:44 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:27:44 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:27:44 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========readfilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:27:45 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=1', desc='用户名为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"","password":"123456"}', contentType='json', expectResult='{"$.username":"该字段不能为空"}', sql='null'}
+2020-07-08 22:27:45 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:27:45 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:27:46 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"username":["该字段不能为空。"]}
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:27:46 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=2', desc='密码为空，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":""}', contentType='json', expectResult='{"$.password":"该字段不能为空"}', sql='null'}
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:27:46 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"password":["该字段不能为空。"]}
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===该字段不能为空
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["该字段不能为空。"]
+2020-07-08 22:27:46 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=3', desc='用户名为非注册过，其它字段不为空且符合要求', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test1","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:27:46 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:27:46 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=4', desc='用户名为注册过，输入错误密码', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"test0000001","password":"111111111"}', contentType='json', expectResult='{"$.non_field_errors":"无法使用提供的认证信息登录"}', sql='null'}
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:27:46 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===无法使用提供的认证信息登录
+2020-07-08 22:27:46 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===["无法使用提供的认证信息登录。"]
+2020-07-08 22:27:46 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:27:46 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:27:46 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:27:47 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:27:47 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:27:47 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:27:47 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:27:47 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:98) - [ INFO ]----==========execlWrite=======
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:99) - [ INFO ]----=========writefilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"username":["该字段不能为空。"]}
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"password":["该字段不能为空。"]}
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----pass
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:27:47 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----failed
+2020-07-08 22:28:33 method: cases.Base.read(Base.java:108) - [ INFO ]----=======Base=====F:\AutoJava\java_atuo_study\exam/src/test/resources/params.properties
+2020-07-08 22:28:33 method: cases.Base.read(Base.java:115) - [ INFO ]----=======Base====={${desc}=desc, ${tester}=barry, ${publish_app}=STG, ${email}=test20200706002@qq.com, ${username}=test20200706002, ${name}=projectName, ${leader}=eric, ${programmer}=jenson}
+2020-07-08 22:28:33 method: utils.ExcelUtils.getTestData(ExcelUtils.java:56) - [ INFO ]----===========readfilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:28:34 method: cases.Login.testLogin(Login.java:27) - [ INFO ]----CaseInfo{ifExecute=Y,caseId=5', desc='正向用例', name='login', type='post', url='http://api.keyou.site:8000/user/login/', params='{"username":"${username}","password":"111111"}', contentType='json', expectResult='{"$.username":"${username}"}', sql='null'}
+2020-07-08 22:28:34 method: cases.Base.parameterization(Base.java:82) - [ INFO ]----============参数化处理开始==============
+2020-07-08 22:28:34 method: cases.Base.parameterization(Base.java:100) - [ INFO ]----============参数化处理结束==============
+2020-07-08 22:28:35 method: utils.HttpUtils.getResponseBody(HttpUtils.java:224) - [ INFO ]----==========响应体=={"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:28:35 method: cases.Login.testLogin(Login.java:36) - [ INFO ]----非数据库断言
+2020-07-08 22:28:35 method: cases.Base.getExecuteFlag(Base.java:59) - [ INFO ]----=======expectResult===test20200706002
+2020-07-08 22:28:35 method: cases.Base.getExecuteFlag(Base.java:60) - [ INFO ]----=======actualResult===null
+2020-07-08 22:28:35 method: cases.Login.addToken(Login.java:49) - [ INFO ]----========token===null
+2020-07-08 22:28:35 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:98) - [ INFO ]----==========execlWrite=======
+2020-07-08 22:28:35 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:99) - [ INFO ]----=========writefilepath===F:\AutoJava\java_atuo_study\exam/src/test/resources/exam.xlsx
+2020-07-08 22:28:35 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----{"non_field_errors":["无法使用提供的认证信息登录。"]}
+2020-07-08 22:28:35 method: utils.ExcelUtils.excelWrite(ExcelUtils.java:115) - [ INFO ]----failed

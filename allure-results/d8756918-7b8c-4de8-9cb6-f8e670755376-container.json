@@ -1,0 +1,1 @@
+{"uuid":"d8756918-7b8c-4de8-9cb6-f8e670755376","name":"cases.Register","start":1593951610201,"stop":1593951611915,"children":["bd50a30a-ded0-4e92-95f1-cd411a96a7ba","862c733b-fd37-4121-a57c-74322c09939f","a9879372-23e9-458f-b2e2-47be33c8e9a7"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","start":1593951610221,"stop":1593951610221}]}
